@@ -1,0 +1,21 @@
+package Practice;
+import java.util.Map.Entry;
+import java.util.*;
+public class Practice 
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Map<Integer, String> m=new Hashtable<>();
+		m.put(123, "Barbie");
+		m.put(456, "Leo");
+		m.put(789, "Rock");
+		m.put(016, "Daniel");
+		Set<Entry<Integer,String>> entry=m.entrySet();
+		for(Entry<Integer,String> i:entry)
+		{
+			System.out.println(i.getKey()+"-->>"+i.getValue());
+		}
+		
+	}
+}

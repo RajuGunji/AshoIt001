@@ -1,0 +1,12 @@
+package Comparable_Comparator;
+import java.util.*;
+public class Student implements Comparable
+{
+	int age;
+	String name;
+	@Override
+	public int compareTo(Object o) 
+	{
+		return 0;
+	}
+}

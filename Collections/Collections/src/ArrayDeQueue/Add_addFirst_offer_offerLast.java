@@ -1,0 +1,23 @@
+package ArrayDeQueue;
+import java.util.*;
+public class Add_addFirst_offer_offerLast
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		ArrayDeque<Object> q=new ArrayDeque<>();
+		q.add("Barbie");
+		q.offerFirst("Doll");
+		q.addFirst("John");
+		q.offerLast("Daniel");
+		q.offer("MobMarley");
+		for(Object x:q)
+		{
+			System.out.println(x);
+		}
+		System.out.println();
+		System.out.println(q.peek());
+		System.out.println(q.peekFirst());
+		System.out.println(q.peekLast());
+	}
+}

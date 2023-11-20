@@ -1,0 +1,23 @@
+package Comparator;
+public class Navin_Reddy
+{
+	int roll;
+	String name;
+	Navin_Reddy(int r,String n)
+	{
+		roll=r;
+		name=n;
+	}
+	public String toString()
+	{
+		return roll+name;
+	}
+	public static void main(String[] args)
+	{
+		Navin_Reddy n=new Navin_Reddy(10,"Raju");
+		Navin_Reddy n1=new Navin_Reddy(48,"Rahul");
+		Navin_Reddy n2=new Navin_Reddy(82,"Rajesh");
+		Navin_Reddy n3=new Navin_Reddy(35,"Ravi");
+		System.out.println(n.roll+n.name);
+	}
+}

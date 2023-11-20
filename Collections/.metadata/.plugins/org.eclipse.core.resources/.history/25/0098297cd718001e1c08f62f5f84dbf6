@@ -1,0 +1,30 @@
+package Vector;
+
+import java.util.Vector;
+
+public class Size_isEmpty_Contains
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Vector<Object> v=new Vector<>();
+		System.out.println("Vector size is: "+v.size());
+		System.out.println("Vector has no Elements?: "+v.isEmpty());
+		System.out.println("Vectro capacity before insertion is: "+v.capacity());
+		v.add(0);
+		v.add('v');
+		v.add("vetcr");
+		v.add(null);
+		v.add(1);
+		v.add("&");
+		v.add(2);
+		v.add(3);
+		v.add(4);
+		v.add(5);
+		v.add(null);
+		v.add(0);
+		System.out.println(v.contains(null));
+		System.out.println("Vector has no Elements?: "+v.isEmpty());
+		System.out.println("Vectro capacity after insertion is: "+v.capacity());
+	}
+}

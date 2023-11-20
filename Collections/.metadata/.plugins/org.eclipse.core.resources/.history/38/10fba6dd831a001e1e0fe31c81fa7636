@@ -1,0 +1,13 @@
+package Comparable_Comparator;
+
+public class Student 
+{
+	int age;
+	String name;
+	Student(int a,String n)
+	{
+		
+	}
+	
+	}
+}

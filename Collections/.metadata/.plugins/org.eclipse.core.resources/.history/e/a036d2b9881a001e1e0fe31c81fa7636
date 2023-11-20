@@ -1,0 +1,13 @@
+package Comparable_Comparator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Comparators
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Student s=new Student();
+	}
+}

@@ -1,0 +1,31 @@
+package Comparable_Comparator;
+import java.util.*;
+public class Comparatorss
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Student s1=new Student();
+		s1.age=17;
+		s1.name="Rahul";
+		Student s2=new Student();
+		s2.age=24;
+		s2.name="Raju";
+		Student s3=new Student();
+		s3.age=21;
+		s3.name="Raasi";
+		Student s4=new Student();
+		s4.age=19;
+		s4.name="Ramesh";
+		List<Student> l=new ArrayList<>();
+		l.add(s1);
+		l.add(s2);
+		l.add(s3);
+		l.add(s4);
+		l.forEach(x->
+		{
+			System.out.println(x.age+"-->"+x.name);
+		});
+	}
+}
+

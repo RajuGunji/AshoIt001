@@ -1,0 +1,29 @@
+package Comparable_Comparator;
+import java.util.*;
+public class Student 
+{
+	int age;
+	static String name;
+	Student(int a,String n)
+	{
+		age=a;
+		name=n;
+	}
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Student s1=new Student(17,"Rahul");
+		Student s2=new Student(24,"Raju");
+		Student s3=new Student(22,"Raasi");
+		Student s4=new Student(20,"Ramesh");
+		List<Object> l=new ArrayList<>();
+		l.add(s1);
+		l.add(s2);
+		l.add(s3);
+		l.add(s4);
+		l.forEach(x->
+		{
+			System.out.println(name);
+		});
+	}
+}

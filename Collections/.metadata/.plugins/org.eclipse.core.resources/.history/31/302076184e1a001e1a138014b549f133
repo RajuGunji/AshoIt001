@@ -1,0 +1,11 @@
+package PriorityQueue;
+import java.util.*;
+public class Peek_null 
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Queue<Integer> q=new PriorityQueue<>();
+		System.out.println(q.peek());
+	}
+}

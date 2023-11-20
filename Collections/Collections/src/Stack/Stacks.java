@@ -1,0 +1,27 @@
+package Stack;
+import java.util.ListIterator;
+import java.util.Stack;
+public class Stacks
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Stack<Object> s=new Stack<>();
+		s.push('s');
+		s.add("stack");
+		s.pop();
+		s.push(0);
+		s.push(1);
+		s.push(2);
+		s.add(null);
+//		System.out.println(s.peek());
+//		ListIterator<Object> l=s.listIterator();
+//		while(l.hasNext())
+//		{
+//			System.out.println(l.next());
+//		}
+		System.out.println(s.size());
+		System.out.println(s.search('s'));
+		System.out.println(s.empty());
+	}
+}

@@ -1,0 +1,10 @@
+package PriorityQueue;
+
+public class Peek_null {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

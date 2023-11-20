@@ -1,0 +1,48 @@
+package Comparator;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+public class Navin_Reddy
+{
+	int roll;
+	String name;
+	Navin_Reddy(int r,String n)
+	{
+		roll=r;
+		name=n;
+	}
+	public String toString()
+	{
+		return roll+name;
+	}
+	public static void main(String[] args)
+	{
+		Navin_Reddy n=new Navin_Reddy(10,"Raju");
+		Navin_Reddy n1=new Navin_Reddy(48,"Rahul");
+		Navin_Reddy n2=new Navin_Reddy(82,"Rajesh");
+		Navin_Reddy n3=new Navin_Reddy(35,"Ravi");
+		List<Navin_Reddy> l=new ArrayList<Navin_Reddy>();
+		l.add(n);
+		l.add(n1);
+		l.add(n2);
+		l.add(n3);
+		l.forEach(x->
+		{
+			System.out.println(x.roll+"-->"+x.name);
+		});
+		Comparator<Navin_Reddy> c=new Comparator<Navin_Reddy>()
+		{
+			public int compare(Navin_Reddy i, Navin_Reddy j)
+			{
+				return i.roll%10>j.roll%10?1:-1;
+			}
+		};
+		Collections.sort(l, c);
+		System.out.println();
+		l.forEach(x->
+		{
+			System.out.println(x.roll+"-->"+x.name);
+		});
+	}
+}

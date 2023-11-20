@@ -1,0 +1,15 @@
+package List;
+import java.util.*;
+public class AsList {
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Object[] arr=new Object[] {1,2,3,4,5};
+		List<Object> l=new Vector<>(Arrays.asList(arr));
+		ListIterator<Object> li=l.listIterator();
+		while(li.hasNext())
+		{
+			System.out.println(li);
+		}
+	}
+}

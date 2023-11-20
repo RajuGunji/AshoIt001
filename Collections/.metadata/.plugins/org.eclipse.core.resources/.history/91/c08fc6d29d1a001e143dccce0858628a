@@ -1,0 +1,13 @@
+package ArrayDeQueue;
+import java.util.*;
+public class Add_addFirst_offer_offerLast
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		ArrayDeque<Object> q=new ArrayDeque<>();
+		q.add("Barbie");
+		q.offerFirst("Doll");
+		
+	}
+}
