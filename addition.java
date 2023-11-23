@@ -5,6 +5,6 @@ public class Add
       int a=10;
       int b=30;
       a=a+b;
-      System.out.println(a);
+      System.out.println("a="+a);
    }
 }
